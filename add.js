@@ -9,5 +9,6 @@ const add = function(note=[], oldNote) {
 
     fs.writeFileSync('note.txt', objectNote)
 }
+//add
 
 module.exports = add

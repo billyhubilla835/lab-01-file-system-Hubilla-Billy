@@ -1,7 +1,9 @@
 const fs = require('fs')
 
-const write = function(cmd="default") {
-    fs.writeFileSync('note.txt', cmd)
+const read = function() {
+  return fs.readFileSync('./note.txt','utf8')
 }
 
-module.exports = write
+
+
+module.exports = read
